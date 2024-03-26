@@ -1,12 +1,12 @@
-import CardList from "./components/cardlist/CardList";
-import Foot from "./components/foot/Foot";
-import Nav from "./components/nav/Nav";
-import Profile from "./components/profile/Profile";
-import { getUserData } from "./api";
+import CardList from "../../components/cardlist/CardList";
+import Foot from "../../components/common/foot/Foot";
+import Nav from "../../components/common/nav/Nav";
+import Profile from "../../components/profile/Profile";
+import { getUserData } from "../../apis/apiShared";
 import { useState, useEffect } from "react";
-import "./App.css";
+import "./shared.css";
 
-function App() {
+function Shared() {
   const [userData, setUserData] = useState(null);
 
   const handleLoad = async () => {
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Shared;

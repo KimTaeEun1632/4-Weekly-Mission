@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logo.png";
 import "./Nav.css";
 
 function Nav() {
@@ -25,7 +25,7 @@ function Nav() {
 
   return (
     <nav>
-      <div class="gnb">
+      <div className="gnb">
         <a href="/">
           <img src={logo} alt="홈으로이동" />
         </a>

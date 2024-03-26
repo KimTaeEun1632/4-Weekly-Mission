@@ -1,4 +1,4 @@
-import SearchInput from "../searchbar/SearchInput";
+import SearchInput from "../../components/searchbar/SearchInput";
 import "./CardList.css";
 import noImg from "../../assets/이미지 없을 때 배경.png";
 
@@ -17,7 +17,7 @@ function CardList({ userData }) {
             ({ id, createdAt, url, title, description, imageSource }) => {
               return (
                 <li key={id}>
-                  <a href={url}>
+                  <a href={url} target="_blank" rel="noopener noreferrer">
                     <div className="imgBox">
                       <img
                         src={imageSource ? imageSource : noImg}
